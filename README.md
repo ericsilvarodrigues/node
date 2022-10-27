@@ -9,7 +9,8 @@ Eric Silva Rodrigues
 [vscode](https://code.visualstudio.com/download)
 
 [npm repository](https://www.npmjs.com/package/repository)
-#Dicas 
+
+##Dicas 
 - node -v (versão do node)
 - npm -v (versão do gerenciador de pacotes)
 - npm unit (iniciar o package.json)
