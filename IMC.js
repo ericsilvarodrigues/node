@@ -23,12 +23,10 @@ if(imc < 18.5){
     console.log("Levemente acima do peso".yellow)
 } else if(imc < 35){
     console.log("Obesidade de 1 grau".magenta)
-}
-
-if(imc < 40){
+} else if(imc < 39.9){
     console.log("Obesidade de 2 grau".red)
-} else{
-    console.log("Obseidade de 3 grau".bgRed)
+}else{
+    console.log("Obesidade de 3 grau".bgRed)
 }
 
 
