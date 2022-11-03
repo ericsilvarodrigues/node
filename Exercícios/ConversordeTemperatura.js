@@ -7,10 +7,10 @@ const colors = require(`colors`)
 
 //Variáveis 
 
-let Fahrenheit = Number(read.question("Qual a temperatura em Fahrenheit ?").replace(",","."))
+let Fahrenheit = Number(read.question("Qual a temperatura em Fahrenheit ? ").replace(",","."))
 
 //processamento
 let Celsius = (Fahrenheit - 32) /1.8
 
 //saída
-console.log(`A temperatura em Celsius: ${Celsius}`)
+console.log(`A temperatura em Celsius: ºC ${Celsius.toFixed(2)}`.blue)

@@ -10,7 +10,7 @@ const colors = require('colors')
 let ValoremDolar = Number(read.question("Qual o valor em Dolar deseja converter ? ").replace(",","."))
 
 //Processamento
-let ValorConvetido = 5.11 * ValoremDolar
+let ValorConvetido = 5.12 * ValoremDolar
 
 //Saída
     console.log(`Valor convertido em Real: R$ ${ValorConvetido}`.rainbow)

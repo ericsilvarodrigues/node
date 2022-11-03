@@ -14,7 +14,7 @@
  }else if(idade > 17 & idade < 71){
      console.log("VOTO OBRIGATÓRIO!".red)
  }else{
-     console.log("VOTO FACULTATIVO".bgYellow)
+     console.log("VOTO FACULTATIVO".yellow)
  }
      
  
