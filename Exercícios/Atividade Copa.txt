@@ -1,0 +1,17 @@
+1. Faça um programa que receba a idade de uma pessoa em anos e imprima essa idade 
+em: Meses, Dias, Horas, Minutos.
+
+
+2. Faça um programa que receba o ano de nascimento de uma pessoa e o ano atual. 
+Calcule e imprima: 
+a. A idade dessa pessoa
+b. Essa idade convertida em semana
+
+
+3. Faça um programa CRIANÇA ESPERANÇA - onde o doador possa escolha o valor da doação e imprima o valor da doação e agradecimentos pela doação.
+[1] para doar R$ 10,00
+[2] para doar R$ 25,00
+[3] para doar R$ 50,00
+[4] para doar outros valores
+[5] para cancelar
+
