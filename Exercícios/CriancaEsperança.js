@@ -13,23 +13,41 @@ console.log("[5] para cancelar")
 //Variáveis
 
 let opcao = Number(read.question("Selecione uma opção: ").replace(",","."))
-let um = 10
-let dois = 25
-let tres = 50 
-let quatro = Number(read.question("Qual seria o outro valor a doar ?").replace(",","."))
-let cinco = 0
+let doacao = 0
 
 //Processamentos
-if(1){
-  console.log( 10,00)
-} else if (2){  
-  console.log( 25.00)
-} else if (3){
-  console.log( 50.00)
-} else if(4){
-  console.log(`${quatro}`)
-} else if(5){
-  console.log(0)
+
+switch(opcao) {
+  case 1:
+    doacao = 10
+  break;
+  case 2:
+    doacao = 25
+  break;
+  case 3:
+    doacao = 30
+  break;
+  case 4:
+    doacao = Number(read.question("Digite o valor da doação: R$"))
+  break;
+  case 5:
+    doacao = 0
+  break;
+  default:
+    console.log("Sua doação será considerada R$ 0,00")
+  break;
+    
+  console.log("Obrigado pela sua doação !")
+  console.log(`Sua doação foi ${doacao}`)
+  
+  
+   
+    
+    
+    
+    
+    
+    
+    
+    
 }
-
-
