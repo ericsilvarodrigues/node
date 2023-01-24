@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* COMENTÁRIOS */
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+
+body{
+    background: #3a3a3a;
+}
+
+/* ====== SMARTPHONE PORTRAIT======*/
+
+
+/* ====== SMARTPHONE LANDSCAPE======*/ 
+@media(min-width: 576px){
+    body{
+        background: #f4f407;
+    }
+
+}
+
+/* ====== TABLET PORTRAIT ======*/
+@media(min-width: 768px){
+    body{
+        background: #07c1f4;
+    }
+
+}
+/* ====== TABLET LANDSCAPE ======*/
+@media(min-width: 992px){
+    body{
+        background: #f48d07;
+    }
+
+}
+/*============= PC ==============*/
+@media(min-width: 1200px){
+    body{
+        background: #e007f4;
+    }
+
+}
