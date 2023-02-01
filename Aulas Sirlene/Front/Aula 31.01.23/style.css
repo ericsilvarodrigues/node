@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+/* COMENTÁRIOS */
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Oswald:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    /*background: #3a3a3a;*/
+    font-family: 'Aboreto', cursive;
+    font-size: 1em;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.flex2{
+    display: flex;
+    align-items: center;   
+}
+
+.flex3{
+    display: flex;
+    flex-direction: column;
+}
+.botao{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background: #004560;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+
+}
+
+/* ====== SMARTPHONE PORTRAIT======*/
+header{
+    height: 60px;
+}
+
+#logo img{
+    width: 128px;
+    height: 128px;
+}
+
+#check{
+    display: none;
+}
+
+label{
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color:rgba(0, 0, 0,0.5);
+}
+
+nav ul{
+    list-style: none;
+    background: #343538;
+    height: 100vh;
+    position: fixed;
+    top:60px;
+    right: -100%;
+    width:  100%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul{
+    right: 0;
+}
+
+nav ul li{
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+main{
+    height: 75vh;
+    background: url(img/banner_front.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1{
+    font-size: 2.5em;
+    margin-bottom: 20px; 
+}
+
+main h2{
+    font-size: 1em;
+    margin: 10px 0px 50px 0px    
+}
+
+/* SEÇÃO SOBRE*/
+ #sobre{
+     padding: 50px 0px;
+     background: url(img/background5.jpg);
+     background-size: cover;
+     background-position: center;
+ }
+
+#destaque_sobre{
+    display:none;
+}
+
+ #texto_sobre{
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#texto_sobre h2{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.topico_sobre{
+    margin-top: 20px;
+}
+
+.topico_sobre img{
+    margin-right: 10px;
+}
+
+/*SEÇÃO ONE PAGE*/
+#onepage{
+    padding: 50px 10px;
+}
+
+#onepage h2{
+    margin-bottom: 25px;
+    font-size: 1.2em;
+}
+
+#onepage p{
+    margin-bottom: 25px;
+    font-size: 1.2em;
+}
+
+#video iframe{
+    width: 340px;
+    height: 191px;
+
+}
+
+/*SEÇÃO WIREFRAME*/
+
+#wireframe{
+    padding: 50px 0px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#texto_wire{
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#texto_wire h2{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+#texto_wire p{
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+#texto_wire span{
+    display: none;
+}
+
+#qrcode{
+    display: none;
+}
+
+/* ====== SMARTPHONE LANDSCAPE======*/ 
+@media(min-width: 576px){
+   /* body{
+        background: #f4f407;
+    }*/
+
+    .container{
+        max-width: 540px;
+    }
+
+    main h1, main h2{
+        text-shadow: #000 0.05em 0.05em 0.05em; 
+    }
+}
+
+
+/* ====== TABLET PORTRAIT ======*/
+@media(min-width: 768px){
+    /*body{
+        background: #07c1f4;
+    }*/
+    .container{
+        max-width: 720px;
+    }
+
+    main{
+        height: 45vh;
+    }
+
+    main h1{
+        font-size: 5.5em;
+    }
+    
+    main h2{
+        font-size: 2em;
+    }
+}
+/* ====== TABLET LANDSCAPE ======*/
+@media(min-width: 992px){
+    /*body{
+        background: #f48d07;
+    }*/
+    .container{
+        max-width: 960px;
+    }
+
+    main{
+        height: 70vh;
+    }
+
+    }
+/*============= PC ==============*/
+@media(min-width: 1200px){
+    /*body{
+        background: #e007f4;
+    }*/
+    .container{
+        max-width: 1140px;
+    }
+
+    .flex3{
+        flex-direction: row;
+        align-items: center;
+    }
+
+/*==========Cabeçalho============*/
+header{
+    height: 120px;
+}
+
+#logo img{
+    width: 120px;
+    height: 128px;
+    margin-top: 30px;
+    margin-left: 20;   
+}
+
+label{
+    display: none;
+}
+
+nav ul{
+    position: static;
+    height: auto;
+    background: transparent;
+    margin-top: 50px;
+}
+nav ul li{
+    float: left;
+    border:0;
+
+}
+nav ul li a{
+    color:#343538;
+}
+
+nav ul li a:hover{
+    color:#4f2bee;
+}
+/*SEÇÃO SOBRE*/
+
+#destaque_sobre{
+    display: inline;
+}
+
+#destaque_sobre img{
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+
+#sobre{
+    background-attachment: fixed;
+}
+
+/*SEÇÃO WIREFRAME*/
+
+#wireframe{
+    background-attachment: fixed;
+}
+
+#texto_wire span{
+    display: inline;
+    color:#004560;
+    font-weight: 700;
+}
+
+#qrcode{
+    display: inline;
+}
+
+}
+
