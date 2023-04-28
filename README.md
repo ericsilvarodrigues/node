@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/ericsilvarodrigues/node)
 # Tutorial NodeJS
-Tutorial de lógica de programação usaando Javascript e a plataforma Node.
+Tutorial de lógica de programação usando Javascript e a plataforma Node.
 ## Autor 
 Eric Silva Rodrigues 
 ## Links
